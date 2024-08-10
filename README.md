@@ -78,5 +78,9 @@ I have no idea how to package stuff for install.
 But I guess I'll figure it out.
 
 # Creating Custom Structures
-Some standard reference json files are included on install, but in the event that a custom structure or updated structure is desired there is a template json.
-Duplicate this configuration, rename, and populate with desired structure.
+Some standard reference json files are included on install, but in the event that a custom structure or updated structure is desired the process for creating one is simple.
+1. Within the `file-structure.json`, duplicate an existing file structure and add it to an appropriate part of the file.
+2. Rename the top level key to `<LANGUAGE>_<PURPOSE>`
+3. Create new directories in `projectBuilder/data/templates/<LANGUAGE>/_<PURPOSE>` that lines up with the `<LANGUAGE>` and `<PURPOSE>` from the newly created object in the `file-structure.json`
+   - Currently, this is mandatory as the script will look for the underscore character in the `<PURPOSE>` directory.
+   - Omitting it would cause problems/failures within the scripts execution

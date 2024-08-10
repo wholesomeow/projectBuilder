@@ -1,0 +1,20 @@
+{
+  "PYTHON_GENERIC": {
+    "README": "README.md",
+    "SETUP": "setup.py",
+    "REQUIREMENTS": "requirements.txt",
+    "SRC": {
+      "INIT": "__init__.py",
+      "STUB_LIB": "stubLib.py",
+      "STUB_CLASS": "stubClass.py",
+      "STUB_EXECUTABLE": "stubExecutable.py"
+    },
+    "DATA": {
+      "REFERENCE": "reference.txt"
+    },
+    "DOCS": {},
+    "TESTS": {
+      "STUB_TEST": "stubTest.py"
+    }
+  }
+}

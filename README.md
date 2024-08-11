@@ -10,7 +10,7 @@ This python project is intended to be a CLI tool that creates a standardized fil
 This project can build standard structures in the following languages:
 - [x] Python
 - [ ] Go
-- [ ] C++
+- [x] C++
 - [ ] Bash
 
 In addition to building out the file structure, it also includes simple default/reference files.

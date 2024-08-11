@@ -16,5 +16,25 @@
     "TESTS": {
       "STUB_TEST": "stubTest.py"
     }
+  },
+  "CPP_GENERIC": {
+    "README": "README.md",
+    "INCLUDE": {
+      "PROJECT_NAME": {
+        "STUB_LIB": "stubLib.h",
+        "STUB_CLASS": "stubClass.h"
+      }
+    },
+    "SRC": {
+      "STUB_LIB": "stubLib.cpp",
+      "STUB_CLASS": "stubClass.cpp",
+      "STUB_EXECUTABLE": "stubExecutable.cpp"
+    },
+    "DATA": {
+      "REFERENCE": "reference.txt"
+    },
+    "DOCS": {},
+    "TESTS": {
+      "STUB_TEST": "stubTest.cpp"
+    }
   }
-}

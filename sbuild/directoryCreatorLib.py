@@ -42,9 +42,6 @@ def createDir(destination_directory, directory_name):
 
 
 def copyRenameFile(source_path, destination_path, file_name):
-  print(f'Source Path: {source_path}')
-  print(f'Destination Path: {destination_path}')
-  print(f'File Name: {file_name}')
   shutil.copy(f'{source_path}/t_{file_name}', f'{destination_path}/')
   shutil.move(f'{destination_path}/t_{file_name}', f'{destination_path}/{file_name}')
 
@@ -54,11 +51,9 @@ def parseFormat(dir, structure, template_dir):
     value = structure.get(key)
     if type(value) is dict:
       parent_dir = key.lower()
-      print(f'Parent Dir: {parent_dir}')
       createDir(dir, parent_dir)
       parseFormatSub(f'{dir}/{parent_dir}', value, template_dir)
     else:
-      print(f'File: {value}')
       copyRenameFile(template_dir, dir, value)
 
 
@@ -69,5 +64,4 @@ def parseFormatSub(dir, structure, template_dir):
       createDir(dir, key.lower())
       parseFormatSub(f'{dir}/{key.lower()}', value, template_dir)
     else:
-      print(f'File: {value}')
       copyRenameFile(template_dir, dir, value)
